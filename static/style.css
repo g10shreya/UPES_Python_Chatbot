@@ -1,0 +1,134 @@
+/* static/style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Quicksand:wght@400&display=swap');
+
+/* General Styling */
+body {
+    background: linear-gradient(135deg, #f3f3f3 30%, #e2e2e2 100%);
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #267C8F;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.chat-box {
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 500px;
+    padding: 15px;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* Message Bubbles */
+.text-secondary, .text-primary {
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 5px 0;
+    line-height: 1.5;
+    word-wrap: break-word;
+    font-size: 0.9rem;
+    color: #FFFFFF !important;  /* Ensuring text color is white */
+}
+
+.text-secondary {
+    align-self: flex-start;
+    background-color: #30C3CD;  /* Bot message bubble color */
+}
+
+.text-primary {
+    align-self: flex-end;
+    background-color: #267C8F;  /* User message bubble color */
+}
+
+/* Footer */
+.card-footer {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e2e2e2;
+    border-top: 1px solid #DDD;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+    background-color: #FFF;
+    color: #333;
+}
+
+button#send-btn {
+    padding: 10px 16px;
+    background-color: #267C8F;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+button#send-btn:hover {
+    background-color: #30C3CD;
+    color: #FFF;
+    cursor: pointer;
+}
+
+/* Scrollbar Styling */
+#chat-container {
+    scrollbar-width: thin;
+    scrollbar-color: #30C3CD #F0F0F0;
+}
+
+#chat-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-container::-webkit-scrollbar-track {
+    background: #F0F0F0;
+}
+
+#chat-container::-webkit-scrollbar-thumb {
+    background-color: #30C3CD;
+    border-radius: 10px;
+    border: 3px solid #F0F0F0;
+}
+
+.suggested-questions h6 {
+    color: #267C8F;
+    margin-bottom: 10px;
+}
+
+.suggested-questions button {
+    margin: 5px 5px 5px 0;
+    background-color: #267C8F;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 12px;
+}
+
+.suggested-questions button:hover {
+    background-color: #30C3CD;
+}
